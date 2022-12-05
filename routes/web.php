@@ -34,5 +34,13 @@ Route::get('/profile', function () {
 });
 
 Route::get('/edit', function () {
-    return view('function.editProfile');
+    return view('feature.editProfile');
+});
+
+Route::get('/book/movin', function () {
+    return view('feature.bookMovin');
+});
+
+Route::get('/book/packin', function () {
+    return view('feature.bookPackin');
 });
