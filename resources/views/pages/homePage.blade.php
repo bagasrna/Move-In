@@ -13,9 +13,9 @@
         <div class="flex justify-center w-full mt-[50px]">
             <img class="flex w-[600px] h-[400px]" src="/image/home5.png" alt="">
         </div>
-        <div class="flex mt-[50px] justify-around w-full flex-row">
-            <img class="w-[342px] h-[216px]" src="/image/home3.png" alt="">
-            <img class="w-[342px] h-[216px]" src="/image/home4.png" alt="">
+        <div class="flex mt-[50px] cursor-pointer justify-around w-full flex-row">
+            <a href="/book/movin"><img class="w-[342px] h-[216px]" src="/image/home3.png" alt=""></a>
+            <a href="/book/packin"><img class="w-[342px] h-[216px]" src="/image/home4.png" alt=""></a>
         </div>
         <div class="flex text-center justify-around mb-[50px]">
             <h3 class="text-[20px] mt-5 w-[342px]">Movin adalah layanan profesional kami yang dapat membantu anda mulai dari pengemasan hingga pegantar </h3>
