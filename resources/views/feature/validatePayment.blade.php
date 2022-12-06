@@ -46,10 +46,7 @@
             <div class="flex flex-col w-full ml-[300px] -mt-[180px] justify-center items-center">
                 <h1 class="text-[20px] tracking-[5px] text-[#595959]">Use Offers to get discounts</h1>
                 <input type="text" class="border mt-[20px] w-[350px] bg-[#D9D9D9] placeholder:text-black placeholder:text-center p-3 rounded-xl text-white" placeholder="Promo or Gift Code">
-                <form action="/checkout" method="post">
-                    @csrf
-                    <button type="submit" class="bg-[#4FA095] text-white mt-[30px] px-[100px] rounded-lg py-2">PAY</button>
-                </form>
+                <a href="/history" class="bg-[#4FA095] text-white mt-[30px] px-[100px] rounded-lg py-2">PAY</>
             </div>
     </div>
     <script type="text/javascript" src="{{ URL::asset('js/counter.js') }}"></script>
