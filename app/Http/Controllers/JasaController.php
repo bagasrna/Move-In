@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Jasa;
 
 class JasaController extends Controller
 {
@@ -35,6 +36,27 @@ class JasaController extends Controller
 
         return view('feature.payment', [
             'user' => $user
+        ]);
+    }
+
+    public function store(Request $request){
+        $user = auth()->user();
+
+        Jasa::create([
+           'user_id' => $user->id,
+           'total' => 300000,
+           'quantity' => 1,
+           'date' => '2022-12-06',
+        ]);
+    }
+
+    public function history(){
+        $user = auth()->user();
+        $histories = Jasa::where('user_id', $user->id);
+
+        return view('feature.payment', [
+            'user' => $user,
+            'histories' => $histories
         ]);
     }
 }

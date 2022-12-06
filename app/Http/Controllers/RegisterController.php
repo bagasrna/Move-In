@@ -15,7 +15,6 @@ class RegisterController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
         $validatedData = $request->validate([
             'username' => 'required|min:3|max:255|unique:users',
             'fullname' => 'required|max:255',
@@ -23,9 +22,14 @@ class RegisterController extends Controller
             'password' => 'required|min:3|max:255|confirmed',
         ]);
 
-        $validatedData['password'] = bcrypt($validatedData['password']);
+        $user = [
+            'fullname' => $request->fullname,
+            'username' => $request->username,
+            'phone' => $request->phone,
+            'password' => bcrypt($request->password)
+        ];
 
-        User::create($validatedData);
+        User::create($user);
 
         return redirect('/login')->with('message', 'Register berhasil, silahkan login!');
     }

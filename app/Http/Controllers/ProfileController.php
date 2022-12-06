@@ -42,4 +42,19 @@ class ProfileController extends Controller
 
         return redirect('/profile')->with('message', 'Data diri kamu udah di update nih, semangattt !!!');
     }
+
+    public function delete(Request $request)
+    {
+        $user = auth()->user();
+
+        Auth::logout();
+     
+        $request->session()->invalidate();
+     
+        $request->session()->regenerateToken();
+
+        User::where('id', $user->id)->delete();
+     
+        return redirect('/login')->with('message', 'Akun berhasil dihapus!');
+    }
 }
