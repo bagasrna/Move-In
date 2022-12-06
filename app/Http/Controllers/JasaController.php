@@ -51,11 +51,12 @@ class JasaController extends Controller
         $user = auth()->user();
 
         $validatedData = $request->validate([
-            'user_id' => $user->id,
+            'date' => 'required',
             'total' => 'required',
             'quantity' => 'required',
-            'date' => 'required',
         ]);
+
+        $validatedData['user_id'] = $user->id;
 
         Jasa::create($validatedData);
 
