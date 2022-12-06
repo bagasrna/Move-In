@@ -26,7 +26,7 @@ class JasaController extends Controller
     public function checkout(){
         $user = auth()->user();
 
-        return view('feature.date', [
+        return view('feature.validatePayment', [
             'user' => $user
         ]);
     }
