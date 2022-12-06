@@ -15,17 +15,18 @@ class RegisterController extends Controller
 
     public function store(Request $request)
     {
+        dd($request);
         $validatedData = $request->validate([
+            'username' => 'required|min:3|max:255|unique:users',
             'fullname' => 'required|max:255',
-            'username' => ['required', 'max:255', 'unique:users'],
-            'phone' => 'required',
-            'password' => 'required|min:3|max:255|confirmed'
+            'phone' => 'required|',
+            'password' => 'required|min:3|max:255|confirmed',
         ]);
 
-        $validatedData['password'] = Hash::make($validatedData['password']);
+        $validatedData['password'] = bcrypt($validatedData['password']);
 
         User::create($validatedData);
 
-        return redirect('/login')->with('message', 'Registration seccessfull! Please login');
+        return redirect('/login')->with('message', 'Register berhasil, silahkan login!');
     }
 }
