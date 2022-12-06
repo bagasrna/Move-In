@@ -8,10 +8,10 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div class="flex flex-col cursor-pointer mx-20 mt-[100px]">
+    <div class="flex flex-col cursor-pointer mx-20 mt-[50px]">
         <div class="flex flex-row items-center">
             <x-heroicon-o-chevron-left  class="h-[20px]"/>
-            <a href="" class="text-[26px] font-bold tracking-[5px] ml-5">back</a>
+            <a href="/book/movin" class="text-[26px] font-bold tracking-[5px] ml-5">back</a>
         </div>
         <form action="">
             @csrf
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="flex justify-end mt-[100px]">
-                <a href="/checkout" class="p-3 text-[16px] justify-center flex w-[150px] text-sm font-semibold text-white bg-[#4FA095] rounded-lg">BOOK NOW</a>
+                <a href="/payment" class="p-3 text-[16px] justify-center flex w-[150px] text-sm font-semibold text-white bg-[#4FA095] rounded-lg">BOOK NOW</a>
             </div>
         </form>
     </div>
