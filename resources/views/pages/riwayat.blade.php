@@ -11,17 +11,21 @@
     <div class=" ml-[60px] flex-col">
         <h1 class="mt-[120px] text-[24px] font-bold">Pesanan</h1>
     </div>
-    <div class="flex flex-row mt-[50px] justify-around p-5 bg-[#D6E4E5]">
+    <div class="flex flex-row mt-[50px] justify-around p-5 bg-[#D6E4E5] ">
         <h1 class="font-bold text-[20px]">Selesai</h1>
     </div>
+        <div class="grid grid-cols-3 w-full p-5 mt-[20px]  mb-[50px]">
         @foreach ($histories as $history)
-            <div" class="flex flex-row w-[600px]">
-                <div class="px-7 h-[350px] text-white p-5 items-center mx-5 mt-[50px] w-full justify-center flex font-semibold text-[20px] flex-col rounded-2xl bg-[#F6F6C9]">
-                    <h1 class="w-[300px]  bg-[#9F9F9F] rounded-2xl py-2 px-5">Tanggal pesan : {{$history->date}}</h1>
-                    <h3 class="mt-[50px] bg-[#9F9F9F] rounded-2xl py-2 px-5 w-[300px]">Quantitiy : {{$history->quantity}}</h3>
-                    <h3 class="mt-[50px] bg-[#9F9F9F] rounded-2xl px-5 py-2 w-[300px]">Total : {{$history->total}}</h3>
+                <div class="px-7 h-[350px] text-white p-5 items-center mx-5 mt-[50px] w-[400px] font-semibold text-[20px] rounded-2xl bg-[#D6E4E5]">
+                    <h1 class="w-[350px]  bg-[#9F9F9F] rounded-2xl py-2 px-5">Tanggal pesan : {{$history->date}}</h1>
+                    <h3 class="mt-[20px] bg-[#9F9F9F] rounded-2xl py-2 px-5 w-[350px]">Quantitiy : {{$history->quantity}}</h3>
+                    <h3 class="mt-[20px] bg-[#9F9F9F] rounded-2xl px-5 py-2 w-[350px]">Total : Rp. {{$history->total}}</h3>
+                    <form action="" class="flex justify-around mt-[90px]">
+                        <button type="submit" class="bg-red-500 p-2 rounded-xl">Delete</button>
+                        <a href="/book/edit" class="bg-blue-500 p-2 px-5 rounded-xl">Edit</a>
+                    </form>
                 </div>
-            </a>
         @endforeach
+
 </body>
 </html>

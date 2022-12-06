@@ -12,9 +12,11 @@
         <div class="py-2 flex w-full items-center">
             <div class="flex w-full justify-between mx-[50px]">
                 <div class="flex flex-row items-center">
-                    <a href="/dashboard" class="h-[63px]" src="/image/Move 3.png" alt="Logo">
+                    <a href="/dashboard">
+                        <img class="h-[63px]" src="/image/Move 3.png" alt="Logo">
+                    </a>
                     <ul class="flex flex-row items-center text-center">
-                        <h1 class="pl-3 text-[20px] font-bold text-[#035397]">Move.In</h1>
+                        <a href="/dashboard" class="pl-3 text-[20px] font-bold text-[#035397]">Move.In</a>
                         <form class="flex ml-[200px] items-center">   
                                 <label for="simple-search" class="sr-only">Search</label>
                             <div class="relative -ml-[100px]">

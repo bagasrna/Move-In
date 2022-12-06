@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="flex justify-end mr-[150px]">
-            <a href="/checkout" class="p-3 text-[16px] justify-center flex w-[150px] text-sm font-semibold text-white bg-[#4FA095] rounded-lg">BOOK</a>
+            <a href="/payment/movein" class="p-3 text-[16px] justify-center flex w-[150px] text-sm font-semibold text-white bg-[#4FA095] rounded-lg">BOOK</a>
     </div>
 </body>
 </html>

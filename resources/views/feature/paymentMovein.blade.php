@@ -22,7 +22,7 @@
                     <input type="date" name="checkout" class="border-2 shadow-lg w-[500px] p-10 mt-[20px] rounded-xl" require>
                 </div>
                 <div class="flex-col flex">
-                    <div class="bg-[#D6E4E5] p-5 flex justify-between w-[400px] rounded-xl mt-[50px]">
+                    <div class="bg-[#D6E4E5] p-5 flex justify-between w-[400px] rounded-xl mt-[100px]">
                         <h1>Quantity : </h1>
                         <div>
                             <button type="button" onclick="decrease()"   class="btn decrease border-2 px-[5px] text-[12px] font-bold rounded-sm border-black">-</button>
