@@ -33,17 +33,10 @@ Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth');
 Route::get('/profile/edit', [ProfileController::class, 'edit'])->middleware('auth');
 Route::put('/profile/edit', [ProfileController::class, 'update'])->middleware('auth');
 
-Route::get('/book/movin', function () {
-    return view('feature.bookMovin');
-});
-
-Route::get('/book/packin', function () {
-    return view('feature.bookPackin');
-});
-
-Route::get('/checkout', function () {
-    return view('feature.date');
-});
+Route::get('/book/movein', [JasaController::class, 'movein'])->middleware('auth');
+Route::get('/book/packin', [JasaController::class, 'packin'])->middleware('auth');
+Route::get('/checkout', [JasaController::class, 'chechkout'])->middleware('auth');
+Route::post('/checkout', [JasaController::class, 'store'])->middleware('auth');
 
 Route::get('/payment', function () {
     return view('feature.payment');
