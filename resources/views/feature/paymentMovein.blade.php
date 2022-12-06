@@ -19,7 +19,7 @@
                 <div class="flex flex-col">
                     <h1 class="text-[16px] font-bold">Select Date</h1>
                     <h1 class="text-[20px] mt-[50px] text-[#035397] font-bold tracking-[10px] justify-center flex ">BOOK MOVE.IN</h1>
-                    <input type="date" name="checkout" class="border-2 shadow-lg w-[500px] p-10 mt-[20px] rounded-xl" require>
+                    <input type="date" name="date" class="border-2 shadow-lg w-[500px] p-10 mt-[20px] rounded-xl" require>
                 </div>
                 <div class="flex-col flex">
                     <div class="bg-[#D6E4E5] p-5 flex justify-between w-[400px] rounded-xl mt-[100px]">
