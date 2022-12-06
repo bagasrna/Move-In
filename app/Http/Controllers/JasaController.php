@@ -59,7 +59,7 @@ class JasaController extends Controller
 
         Jasa::create($validatedData);
 
-        return redirect('/history');
+        return redirect('/checkout');
     }
 
     public function history(){
