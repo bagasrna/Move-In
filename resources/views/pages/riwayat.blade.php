@@ -22,7 +22,7 @@
                     <h3 class="mt-[20px] bg-[#9F9F9F] rounded-2xl px-5 py-2 w-[350px]">Total : Rp. {{$history->total}}</h3>
                     <form action="" class="flex justify-around mt-[90px]">
                         <button type="submit" class="bg-red-500 p-2 rounded-xl">Delete</button>
-                        <a href="/book/edit" class="bg-blue-500 p-2 px-5 rounded-xl">Edit</a>
+                        <a href="/book/edit/{{ $history->id }}" class="bg-blue-500 p-2 px-5 rounded-xl">Edit</a>
                     </form>
                 </div>
         @endforeach
