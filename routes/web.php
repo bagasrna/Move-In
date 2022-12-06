@@ -37,7 +37,4 @@ Route::get('/book/movein', [JasaController::class, 'movein'])->middleware('auth'
 Route::get('/book/packin', [JasaController::class, 'packin'])->middleware('auth');
 Route::get('/checkout', [JasaController::class, 'checkout'])->middleware('auth');
 Route::post('/checkout', [JasaController::class, 'store'])->middleware('auth');
-
-Route::get('/payment', function () {
-    return view('feature.payment');
-});
+Route::get('/payment', [JasaController::class, 'payment'])->middleware('auth');

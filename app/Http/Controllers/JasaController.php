@@ -29,4 +29,12 @@ class JasaController extends Controller
             'user' => $user
         ]);
     }
+
+    public function payment(){
+        $user = auth()->user();
+
+        return view('feature.payment', [
+            'user' => $user
+        ]);
+    }
 }
