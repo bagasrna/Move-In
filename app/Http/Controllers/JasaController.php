@@ -48,6 +48,8 @@ class JasaController extends Controller
            'quantity' => 1,
            'date' => '2022-12-06',
         ]);
+
+        return redirect('/history');
     }
 
     public function history(){
