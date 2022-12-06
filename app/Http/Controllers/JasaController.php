@@ -31,10 +31,18 @@ class JasaController extends Controller
         ]);
     }
 
-    public function payment(){
+    public function paymentMovein(){
         $user = auth()->user();
 
-        return view('feature.payment', [
+        return view('feature.paymentMovein', [
+            'user' => $user
+        ]);
+    }
+
+    public function paymentPackin(){
+        $user = auth()->user();
+
+        return view('feature.paymentPackin', [
             'user' => $user
         ]);
     }
