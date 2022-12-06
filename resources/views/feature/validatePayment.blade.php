@@ -14,7 +14,7 @@
             </div>
             <div class="flex ml-[50px] mt-[50px] font-semibold tracking-[5px] flex-col">
                 <h1>TOTAL PAYMENT</h1>
-                <h4 class="mt-[10px] font-semibold text-[20px]">Rp. 300.000,00</h4>
+                <h4 class="mt-[10px] font-semibold text-[20px]"></h4>
             <h4 class="mt-[60px] font-bold text-[20px]">Select Payment Method</h4>
             </div>
         <div class="ml-[50px] mt-[50px] w-[600px]">
