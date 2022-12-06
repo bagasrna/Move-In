@@ -56,7 +56,7 @@ class JasaController extends Controller
         $user = auth()->user();
         $histories = Jasa::where('user_id', $user->id);
 
-        return view('feature.payment', [
+        return view('pages.riwayat', [
             'user' => $user,
             'histories' => $histories
         ]);
