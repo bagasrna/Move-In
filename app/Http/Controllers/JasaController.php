@@ -54,7 +54,7 @@ class JasaController extends Controller
 
     public function history(){
         $user = auth()->user();
-        $histories = Jasa::where('user_id', $user->id);
+        $histories = Jasa::where('user_id', $user->id)->get();;
 
         return view('pages.riwayat', [
             'user' => $user,
