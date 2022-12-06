@@ -13,6 +13,7 @@
             <form action="/profile/edit" method="post">
             <div class="flex flex-row mt-[50px] justify-center">
                     @csrf
+                    @method('put')
                     <div class="flex flex-col font-Open Sans">
                         <input type="text" name="full_name" class="w-[600px] placeholder:text-black border rounded-md bg-[#D6E4E5] mt-2 p-3 placeholder:-pl-[600px]" placeholder="Full Name">
                         <input type="number" name="phone" class="w-[600px] border placeholder:text-black  rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Username">
