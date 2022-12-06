@@ -32,9 +32,11 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth');
 Route::get('/profile/edit', [ProfileController::class, 'edit'])->middleware('auth');
 Route::put('/profile/edit', [ProfileController::class, 'update'])->middleware('auth');
+Route::delete('/profile/delete', [ProfileController::class, 'delete'])->middleware('auth');
 
 Route::get('/book/movein', [JasaController::class, 'movein'])->middleware('auth');
 Route::get('/book/packin', [JasaController::class, 'packin'])->middleware('auth');
 Route::get('/checkout', [JasaController::class, 'checkout'])->middleware('auth');
 Route::post('/checkout', [JasaController::class, 'store'])->middleware('auth');
 Route::get('/payment', [JasaController::class, 'payment'])->middleware('auth');
+Route::get('/history', [JasaController::class, 'history'])->middleware('auth');
