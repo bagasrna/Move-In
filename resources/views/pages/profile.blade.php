@@ -15,8 +15,8 @@
                     @csrf
                     <div class="flex flex-col font-Open Sans">
                         <input value="{{ $user->fullname }}" type="text" name="fullname" class="w-[600px] placeholder:text-black border rounded-md bg-[#D6E4E5] mt-2 p-3 placeholder:-pl-[600px]" placeholder="Full Name">
-                        <input value="{{ $user->phone }}" type="text" name="username" class="w-[600px] border placeholder:text-black  rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Username">
-                        <input value="{{ $user->username }}" type="number" name="phone" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Phone Number">
+                        <input value="{{ $user->username }}" type="text" name="username" class="w-[600px] border placeholder:text-black  rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Username">
+                        <input value="{{ $user->phone }}" type="number" name="phone" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Phone Number">
                     </div>
                     <div class="flex flex-col ml-[100px] font-Open Sans">
                         <input value="{{ $user->address }}" type="text" name="adress" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-2 p-3 placeholder:-pl-[600px]" placeholder="Address">
