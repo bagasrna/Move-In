@@ -14,7 +14,7 @@
             <img class="flex w-[600px] h-[400px]" src="/image/home5.png" alt="">
         </div>
         <div class="flex mt-[50px] cursor-pointer justify-around w-full flex-row">
-            <a href="/book/movin"><img class="w-[342px] h-[216px]" src="/image/home3.png" alt=""></a>
+            <a href="/book/movein"><img class="w-[342px] h-[216px]" src="/image/home3.png" alt=""></a>
             <a href="/book/packin"><img class="w-[342px] h-[216px]" src="/image/home4.png" alt=""></a>
         </div>
         <div class="flex text-center justify-around mb-[50px]">
