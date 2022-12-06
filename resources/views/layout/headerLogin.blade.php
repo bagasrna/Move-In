@@ -12,7 +12,7 @@
         <div class="py-2 flex w-full items-center">
             <div class="flex w-full justify-between mx-[50px]">
                 <div class="flex flex-row items-center">
-                    <img class="h-[63px]" src="/image/Move 3.png" alt="Logo">
+                    <a href="/dashboard" class="h-[63px]" src="/image/Move 3.png" alt="Logo">
                     <ul class="flex flex-row items-center text-center">
                         <h1 class="pl-3 text-[20px] font-bold text-[#035397]">Move.In</h1>
                         <form class="flex ml-[200px] items-center">   
