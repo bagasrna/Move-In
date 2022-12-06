@@ -44,3 +44,7 @@ Route::get('/book/movin', function () {
 Route::get('/book/packin', function () {
     return view('feature.bookPackin');
 });
+
+Route::get('/checkout', function () {
+    return view('pages.date');
+});

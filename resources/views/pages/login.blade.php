@@ -16,7 +16,7 @@
                 <h1 class="font-bold text-[24px]">Login</h1>
                 <div class="flex flex-row">
                     <div class="flex flex-col mt-7 font-Open Sans">
-                        <input type="text" name="full_name" class="w-[500px] border rounded-xl bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px] placeholder:text-[black]" placeholder="Full Name">
+                        <input type="text" name="username" class="w-[500px] border rounded-xl bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px] placeholder:text-[black]" placeholder="Username">
                         <input type="password" name="password" class="w-[500px] border rounded-xl bg-[#D6E4E5] mt-7 p-3 placeholder:-pl-[600px] placeholder:text-[black]" placeholder="Password">
                     </div>
                 </div>
