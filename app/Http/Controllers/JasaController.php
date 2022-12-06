@@ -50,14 +50,16 @@ class JasaController extends Controller
     public function store(Request $request){
         $user = auth()->user();
 
-        Jasa::create([
-           'user_id' => $user->id,
-           'total' => 300000,
-           'quantity' => 1,
-           'date' => '2022-12-06',
+        $validatedData = $request->validate([
+            'user_id' => $user->id,
+            'total' => 'required',
+            'quantity' => 'required',
+            'date' => 'required',
         ]);
 
-        return redirect('/history');
+        Jasa::create($validatedData);
+
+        return redirect('/checkout');
     }
 
     public function history(){
