@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+Use Alert;
 
 class ProfileController extends Controller
 {
@@ -40,7 +41,7 @@ class ProfileController extends Controller
 
         User::where('id', auth()->user()->id)->update($validatedData);
 
-        return redirect('/profile')->with('message', 'Data diri kamu udah di update nih, semangattt !!!');
+        return redirect('/profile')->with('success', 'Data diri kamu udah di update nih!!!');
     }
 
     public function delete(Request $request)

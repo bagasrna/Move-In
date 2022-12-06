@@ -8,10 +8,6 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-            <div class="flex flex-row ml-[50px] cursor-pointer mt-[50px] items-center">
-                <x-heroicon-o-chevron-left  class="h-[20px]"/>
-                <a href="/checkout" class="text-[26px] font-bold tracking-[5px] ml-5">back</a>
-            </div>
             <div class="flex ml-[50px] mt-[50px] font-semibold tracking-[5px] flex-col">
                 <h1>TOTAL PAYMENT</h1>
                 <h4 class="mt-[10px] font-semibold text-[20px]"></h4>
@@ -46,9 +42,10 @@
             <div class="flex flex-col w-full ml-[300px] -mt-[180px] justify-center items-center">
                 <h1 class="text-[20px] tracking-[5px] text-[#595959]">Use Offers to get discounts</h1>
                 <input type="text" class="border mt-[20px] w-[350px] bg-[#D9D9D9] placeholder:text-black placeholder:text-center p-3 rounded-xl text-white" placeholder="Promo or Gift Code">
-                <a href="/history" class="bg-[#4FA095] text-white mt-[30px] px-[100px] rounded-lg py-2">PAY</>
+                <a href="/history" class="bg-[#4FA095] text-white mt-[30px] px-[100px] rounded-lg py-2">PAY</a>
             </div>
     </div>
     <script type="text/javascript" src="{{ URL::asset('js/counter.js') }}"></script>
+    @include('sweetalert::alert')
 </body>
 </html>

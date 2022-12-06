@@ -1,22 +1,22 @@
-const counter = document.getElementById('counter')
-const button = document.querySelectorAll('.btn')
 const harga = document.getElementById('total')
-const input = document.getElementById('counter')
 
 let count = 0;
-let total = 0;
+// let total = 0;
+var counter = document.getElementById("counter");
+let total = counter.value;
 
 function increase() {
     var textbox = document.getElementById("counter");
     textbox.value++;
-    total += 300000
-    harga.value = total;
+    total++;
+    // total += 300000
+    harga.value = total * 300000;
 }
 function decrease() {
     var textBox = document.getElementById("counter");
     textBox.value--;
-    total -= 300000
-    harga.value = total;
+    total--;
+    harga.value = total * 300000;
 }
 
 

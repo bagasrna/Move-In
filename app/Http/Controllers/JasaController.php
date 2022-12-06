@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Jasa;
+Use Alert;
 
 class JasaController extends Controller
 {
@@ -71,7 +72,7 @@ class JasaController extends Controller
 
         Jasa::where('id', $request->id)->update($validatedData);
 
-        return redirect('/history')->with('message', 'Pesanan udah di update nih, semangattt !!!');
+        return redirect('/history')->with('success', 'Pesanan udah di update nih!!!');
     }
 
     public function delete(Request $request)
