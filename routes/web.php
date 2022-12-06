@@ -46,5 +46,9 @@ Route::get('/book/packin', function () {
 });
 
 Route::get('/checkout', function () {
-    return view('pages.date');
+    return view('feature.date');
+});
+
+Route::get('/payment', function () {
+    return view('feature.payment');
 });

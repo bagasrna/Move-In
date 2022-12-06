@@ -8,7 +8,6 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    @include('layout.headerLogin')
     <div class="flex flex-col cursor-pointer mx-20 mt-[100px]">
         <div class="flex flex-row items-center">
             <x-heroicon-o-chevron-left  class="h-[20px]"/>
