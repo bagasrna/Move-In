@@ -34,7 +34,7 @@
                         <h1>Total Payment</h1>
                         <div>
                             <span>Rp. </span>
-                            <input type="text" name="payment" value="0" id="total" class="bg-[#D6E4E5] placeholder:text-black"></input>
+                            <input type="text" name="total" value="0" id="total" class="bg-[#D6E4E5] placeholder:text-black"></input>
                         </div>
                     </div>
                 </div>
