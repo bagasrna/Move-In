@@ -47,6 +47,21 @@ class JasaController extends Controller
         ]);
     }
 
+    public function edit(){
+        $user = auth()->user();
+
+        return view('feature.editPesanan', [
+            'user' => $user
+        ]);
+    }
+
+    public function delete(Request $request)
+    {
+        Jasa::where('id', $request->id)->delete();
+     
+        return redirect('/history')->with('message', 'Pesanan berhasil dihapus!');
+    }
+
     public function store(Request $request){
         $user = auth()->user();
 
