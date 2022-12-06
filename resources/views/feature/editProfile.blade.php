@@ -10,7 +10,7 @@
     @include('layout.headerLogin')
         <div class="flex flex-col justify-center w-full mt-[200px]">
             <h1 class="font-bold text-[25px] mx-[120px]">Profile</h1>
-            <form action="" method="">
+            <form action="/profile/edit" method="post">
             <div class="flex flex-row mt-[50px] justify-center">
                     @csrf
                     <div class="flex flex-col font-Open Sans">

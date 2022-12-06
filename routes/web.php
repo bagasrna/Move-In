@@ -29,13 +29,9 @@ Route::post('/register', [RegisterController::class, 'store'])->middleware('gues
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
 
-Route::get('/profile', function () {
-    return view('pages.profile');
-});
-
-Route::get('/edit', function () {
-    return view('feature.editProfile');
-});
+Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth');
+Route::get('/profile/edit', [ProfileController::class, 'edit'])->middleware('auth');
+Route::post('/profile/edit', [ProfileController::class, 'update'])->middleware('auth');
 
 Route::get('/book/movin', function () {
     return view('feature.bookMovin');
