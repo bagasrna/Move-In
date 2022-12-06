@@ -21,8 +21,13 @@
                         <input type="text" name="address" value="{{ $user->address }}"  class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Address">
                     </div>
                     <div class="flex flex-col ml-[100px] font-Open Sans">
-                        <input type="date" value="{{ $user->date }}"  name="birth_date" class="w-[600px] placeholder:text-black  border rounded-md mt-2 bg-[#D6E4E5] p-3 placeholder:-pl-[600px]" placeholder="Birth Date dd/mm/yy">
-                        <input type="password" name="password" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Password">
+                        <input type="date" value="{{ $user->birth_date }}"  name="birth_date" class="w-[600px] placeholder:text-black  border rounded-md mt-2 bg-[#D6E4E5] p-3 placeholder:-pl-[600px]" placeholder="Birth Date dd/mm/yy">
+                        <input type="password" name="password" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px] @error('password') is-invalid @enderror" placeholder="Password">
+                        @error('password')
+                        <div class="invalid-feedback text-red-500">
+                          {{ $message }}
+                        </div>
+                        @enderror
                         <input type="password" name="confirm_password" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Confirm Password">
                         <button type="submit" class="text-center bg-[#4FA095] rounded-lg mt-5 p-3 text-white font-bold" >SAVE</button>
                     </div>
