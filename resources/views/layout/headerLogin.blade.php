@@ -28,7 +28,7 @@
                 </div>
                 <div class="pt-2 items-center flex">
                     <a class="mr-14 cursor-pointer text-black" href="/dashboard">Home</a>
-                    <a class="mr-14 cursor-pointer text-black" href="">Riwayat</a>
+                    <a class="mr-14 cursor-pointer text-black" href="/history">Riwayat</a>
                     <a href="/profile" class="hover:bg-[#42877e] px-[40px] py-2 text-black font-bold rounded-full bg-[#4FA095]">Profile</a>
                     <form action="/logout" method="post">
                         @csrf
