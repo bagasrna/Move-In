@@ -15,13 +15,13 @@
                     @csrf
                     @method('put')
                     <div class="flex flex-col font-Open Sans">
-                        <input type="text" name="full_name" class="w-[600px] placeholder:text-black border rounded-md bg-[#D6E4E5] mt-2 p-3 placeholder:-pl-[600px]" placeholder="Full Name">
-                        <input type="number" name="phone" class="w-[600px] border placeholder:text-black  rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Username">
-                        <input type="number" name="phone" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Phone Number">
-                        <input type="text" name="adress" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Address">
+                        <input type="text" value="{{ $user->fullname }}" name="full_name" class="w-[600px] placeholder:text-black border rounded-md bg-[#D6E4E5] mt-2 p-3 placeholder:-pl-[600px]" placeholder="Full Name">
+                        <input type="text" value="{{ $user->username }}"  name="username" class="w-[600px] border placeholder:text-black  rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Username">
+                        <input type="number" name="phone" value="{{ $user->phone }}"  class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Phone Number">
+                        <input type="text" name="adress" value="{{ $user->address }}"  class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Address">
                     </div>
                     <div class="flex flex-col ml-[100px] font-Open Sans">
-                        <input type="date" name="birth_date" class="w-[600px] placeholder:text-black  border rounded-md mt-2 bg-[#D6E4E5] p-3 placeholder:-pl-[600px]" placeholder="Birth Date dd/mm/yy">
+                        <input type="date" value="{{ $user->date }}"  name="birth_date" class="w-[600px] placeholder:text-black  border rounded-md mt-2 bg-[#D6E4E5] p-3 placeholder:-pl-[600px]" placeholder="Birth Date dd/mm/yy">
                         <input type="password" name="password" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Password">
                         <input type="password" name="confirm_password" class="w-[600px] placeholder:text-black  border rounded-md bg-[#D6E4E5] mt-5 p-3 placeholder:-pl-[600px]" placeholder="Confirm Password">
                         <button type="submit" class="text-center bg-[#4FA095] rounded-lg mt-5 p-3 text-white font-bold" >SAVE</button>
