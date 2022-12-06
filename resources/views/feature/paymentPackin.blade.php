@@ -19,7 +19,6 @@
                 <div class="flex flex-col">
                     <h1 class="text-[16px] font-bold">Select Date</h1>
                     <h1 class="text-[20px] mt-[50px] text-[#035397] font-bold tracking-[10px] justify-center flex ">BOOK PACKIN</h1>
-                    <input type="date" name="date" class="border-2 shadow-lg w-[500px] p-10 mt-[20px] rounded-xl" require>
                     <input type="date" name="date" class="border-2 shadow-lg w-[500px] p-10 mt-[20px] rounded-xl">
                 </div>
                 <div class="flex-col flex">
