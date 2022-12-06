@@ -8,6 +8,11 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    
+    <div>
+        <div class="flex flex-row cursor-pointer mx-20 mt-[50px] items-center">
+            <x-heroicon-o-chevron-left  class="h-[20px]"/>
+            <a href="/checkout" class="text-[26px] font-bold tracking-[5px] ml-5">back</a>
+        </div>
+    </div>
 </body>
 </html>
