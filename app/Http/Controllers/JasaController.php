@@ -47,12 +47,31 @@ class JasaController extends Controller
         ]);
     }
 
-    public function edit(){
+    public function edit($id){
         $user = auth()->user();
 
+        $jasa = Jasa::where('id', $id)->first();
+
         return view('feature.editPesanan', [
-            'user' => $user
+            'user' => $user,
+            'jasa' => $jasa,
         ]);
+    }
+
+    public function update(Request $request)
+    {
+        $rules = [
+            'id' => 'required',
+            'quantity' => 'required',
+            'total' => 'required',
+            'date' => 'required',
+        ];
+
+        $validatedData = $request->validate($rules);
+
+        Jasa::where('id', $request->id)->update($validatedData);
+
+        return redirect('/history')->with('message', 'Pesanan udah di update nih, semangattt !!!');
     }
 
     public function delete(Request $request)

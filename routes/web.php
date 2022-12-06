@@ -36,7 +36,8 @@ Route::delete('/profile/delete', [ProfileController::class, 'delete'])->middlewa
 
 Route::get('/book/movein', [JasaController::class, 'movein'])->middleware('auth');
 Route::get('/book/packin', [JasaController::class, 'packin'])->middleware('auth');
-Route::get('/book/edit', [JasaController::class, 'edit'])->middleware('auth');
+Route::get('/book/edit/{id}', [JasaController::class, 'edit'])->middleware('auth');
+Route::put('/book/edit', [JasaController::class, 'update'])->middleware('auth');
 Route::delete('/book/delete', [JasaController::class, 'delete'])->middleware('auth');
 Route::get('/checkout', [JasaController::class, 'checkout'])->middleware('auth');
 Route::post('/checkout', [JasaController::class, 'store'])->middleware('auth');
