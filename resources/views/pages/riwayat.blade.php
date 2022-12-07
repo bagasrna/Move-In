@@ -20,7 +20,8 @@
                     <h1 class="w-[350px]  bg-[#9F9F9F] rounded-2xl py-2 px-5">Tanggal pesan : {{$history->date}}</h1>
                     <h3 class="mt-[20px] bg-[#9F9F9F] rounded-2xl py-2 px-5 w-[350px]">Quantitiy : {{$history->quantity}}</h3>
                     <h3 class="mt-[20px] bg-[#9F9F9F] rounded-2xl px-5 py-2 w-[350px]">Total : Rp. {{$history->total}}</h3>
-                    <form action="/book/delete" class="flex justify-around mt-[90px]" method="post">
+                    <h3 class="mt-[20px] bg-[#9F9F9F] rounded-2xl px-5 py-2 w-[350px]">Jenis : {{$history->jenis}}</h3>
+                    <form action="/book/delete" class="flex justify-around mt-[30px]" method="post">
                         @csrf
                         @method('delete')
                         <input type="hidden" name="id" value="{{ $history->id }}" />
