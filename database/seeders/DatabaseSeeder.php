@@ -37,8 +37,8 @@ class DatabaseSeeder extends Seeder
 
          Jasa::create([
             'user_id' => 1,
-            'total' => 300000,
-            'quantity' => 1,
+            'total' => 600000,
+            'quantity' => 2,
             'date' => '2022-12-03',
             'jenis' => "Packin",
          ]);
