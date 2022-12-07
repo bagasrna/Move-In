@@ -14,8 +14,23 @@ function increase() {
 }
 function decrease() {
     var textBox = document.getElementById("counter");
-    textBox.value--;
+    if(textBox.value > 0){
+        textBox.value--;
+    }else{
+        textBox.value = 0;
+    }
     total--;
+    harga.value = total * 300000;
+}
+
+function decrease() {
+    var textBox = document.getElementById("counter");
+    if(textBox.value > 0){
+        textBox.value--;
+    }else{
+        textBox.value = 0;
+    }
+    total = textBox.value;
     harga.value = total * 300000;
 }
 
