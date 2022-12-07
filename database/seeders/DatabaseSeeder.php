@@ -32,6 +32,7 @@ class DatabaseSeeder extends Seeder
             'total' => 300000,
             'quantity' => 1,
             'date' => '2022-12-06',
+            'jenis' => "Move.In",
          ]);
 
          Jasa::create([
@@ -39,6 +40,7 @@ class DatabaseSeeder extends Seeder
             'total' => 300000,
             'quantity' => 1,
             'date' => '2022-12-03',
+            'jenis' => "Packin",
          ]);
 
          Jasa::create([
@@ -46,6 +48,7 @@ class DatabaseSeeder extends Seeder
             'total' => 600000,
             'quantity' => 2,
             'date' => '2022-12-03',
+            'jenis' => "Move.In",
          ]);
 
          Jasa::create([
@@ -53,6 +56,7 @@ class DatabaseSeeder extends Seeder
             'total' => 300000,
             'quantity' => 1,
             'date' => '2022-12-06',
+            'jenis' => "Packin",
          ]);
     }
 }

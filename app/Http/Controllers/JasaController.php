@@ -88,6 +88,7 @@ class JasaController extends Controller
             'date' => 'required',
             'total' => 'required',
             'quantity' => 'required',
+            'jenis' => 'required',
         ]);
 
         $validatedData['user_id'] = $user->id;

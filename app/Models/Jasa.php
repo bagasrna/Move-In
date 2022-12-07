@@ -14,5 +14,6 @@ class Jasa extends Model
         'date',
         'total',
         'quantity',
+        'jenis',
     ];
 }

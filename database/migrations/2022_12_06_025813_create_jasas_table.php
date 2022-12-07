@@ -19,6 +19,7 @@ return new class extends Migration
             $table->date('date');
             $table->integer('quantity');
             $table->double('total');
+            $table->string('jenis');
             $table->timestamps();
         });
     }
